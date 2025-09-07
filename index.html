@@ -21,9 +21,10 @@
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js");
     }
-
-    // فتح المتجر الأصلي
-    window.location.href = "https://saudi.ounass.com"; // ضع رابط متجرك هنا
+    // تأخير بسيط حتى يلتقط المتصفح manifest + sw
+    setTimeout(() => {
+      window.location.href = "https://saudi.ounass.com"; // ضع رابط متجرك هنا
+    }, 1500);
   </script>
 </head>
 <body>
