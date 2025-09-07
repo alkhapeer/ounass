@@ -7,26 +7,26 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#000000">
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       background: #fff;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+      font-family: sans-serif;
     }
   </style>
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js");
     }
+
+    // فتح المتجر الأصلي
+    window.location.href = "https://saudi.ounass.com"; // ضع رابط متجرك هنا
   </script>
 </head>
 <body>
-  <!-- افتح متجرك الأصلي هنا -->
-  <iframe src="https://saudi.ounass.com/"></iframe>
+  <p>جارٍ فتح المتجر...</p>
 </body>
 </html>
